@@ -6,6 +6,12 @@
   <title>SDK埋点监控</title>
 </head>
 <body>
-  
+  <button id="btn1">点击报错</button>
+  <script>
+    const btn1 = document.querySelector('#btn1')
+    btn1.addEventListener('click', () => {
+      window.error.name = 'error'
+    })
+  </script>
 </body>
 </html>

@@ -1,1 +1,3 @@
-console.log(123)
+import { catchError } from "./packages/catchError"
+
+catchError()
